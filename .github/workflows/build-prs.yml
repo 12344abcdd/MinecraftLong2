@@ -27,13 +27,13 @@ jobs:
       - name: Setup JDK 17
         uses: actions/setup-java@v2
         with:
-          java-version: '17'
+          java-version: '17.0.8'
           distribution: 'temurin'
 
       - name: Setup with Gradle
         uses: gradle/gradle-build-action@v2
         with:
-          arguments: setup
+          arguments: setup --no-daemon
           cache-read-only: false
 
       - name: Build with Gradle
