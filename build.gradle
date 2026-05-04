@@ -30,6 +30,10 @@ plugins {
     id 'net.minecraftforge.gradle.patcher' version '[6.0.6,6.2)' apply false
     id 'net.minecraftforge.gradle.mcp' version '[6.0.6,6.2)' apply false
 }
+System.setProperty('java.awt.headless', 'true')
+System.setProperty('file.encoding', 'UTF-8')
+System.setProperty('user.language', 'en')
+System.setProperty('user.country', 'US')
 
 Util.init() //Init all our extension methods!
 
