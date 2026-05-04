@@ -34,6 +34,9 @@ System.setProperty('java.awt.headless', 'true')
 System.setProperty('file.encoding', 'UTF-8')
 System.setProperty('user.language', 'en')
 System.setProperty('user.country', 'US')
+System.setProperty("java.awt.headless", "true")
+System.setProperty("java.io.tmpdir", System.getenv("RUNNER_TEMP") != null ? System.getenv("RUNNER_TEMP") : "/tmp")
+System.setProperty("net.minecraftforge.bootstrap.skip", "true")
 
 Util.init() //Init all our extension methods!
 
